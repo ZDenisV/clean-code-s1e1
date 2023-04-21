@@ -18,44 +18,44 @@
     </header>
     <div class="container">
       <!-- Add item -->
-      <label for="new-task">Add Item</label>
+      <label for="new-task" class="task-lable">Add Item</label>
       <div class="task-row-wrapper">
-        <input id='new-task'class="task" type="text">
+        <input id='new-task'class="task-name task-name-input" type="text">
         <button class="button">Add</button>
       </div>
       <!-- Task list -->
-      <h3>Todo</h3>
+      <h3 class="section-header">Todo</h3>
       <ul id='incomplete-tasks' class="task-list">
-        <li>
-          <input type='checkbox' aria-label="done">
-          <label class="task-name">Pay Bills</label>
-          <input type="text" class="task">
+        <li class="task">
+          <input type='checkbox' aria-label="done" class="checkbox">
+          <label class="task-name" id="task-lable">Pay Bills</label>
+          <input type="text" class="task-name task-name-input" id="task-input">
           <button class="button edit">Edit</button>
           <button class="button delete">
-            <img src="./remove.svg" alt="icon for remove button">
+            <img src="./remove.svg" alt="icon for remove button" class="delete-img">
           </button>
         </li>
         <!-- Edit Task -->
-        <li class="editMode">
-          <input type="checkbox" aria-label="done">
-          <label class="task-name">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task-name">
+        <li class="task edit-mode">
+          <input type="checkbox" aria-label="done" class="checkbox">
+          <label class="task-name" id="task-lable">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task-name task-name-input" id="task-input">
           <button class='button edit'>Save</button>
           <button class="button delete">
-            <img src="./remove.svg" alt="icon for remove button">
+            <img src="./remove.svg" alt="icon for remove button" class="delete-img">
           </button>
         </li>
       </ul>
       <!-- Commpleted -->
-      <h3>Completed</h3>
+      <h3 class="section-header">Completed</h3>
       <ul id="completed-tasks" class="task-list">
-        <li>
-          <input type="checkbox" checked aria-label="done">
-          <label class="task-name">See the Doctor</label>
-          <input type="text" class="task">
+        <li class="task">
+          <input type="checkbox" checked aria-label="done" class="checkbox">
+          <label class="task-name completed" id="task-lable">See the Doctor</label>
+          <input type="text" class="task-name task-name-input" id="task-input">
           <button class="button edit">Edit</button>
           <button class="button delete">
-            <img src="./remove.svg" alt="icon for remove button">
+            <img src="./remove.svg" alt="icon for remove button" class="delete-img">
           </button>
         </li>
       </ul>
