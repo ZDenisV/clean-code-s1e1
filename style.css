@@ -155,16 +155,16 @@ body {
 }
 
 /* Edit Task */
-#task-input {
+.task-input {
     display: none;
 }
 
-.edit-mode #task-input {
+.edit-mode .task-input {
     display: inline-block;
     width: 224px;
 }
 
-.edit-mode #task-lable {
+.edit-mode .task-label {
     display: none;
 }
 
@@ -174,5 +174,5 @@ body {
     .header {
         text-align: center;
     }
-    
+
 }
